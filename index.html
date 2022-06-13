@@ -22,13 +22,50 @@
             </div>
         </nav>
         <div class="information">
+            <img src="shah.jpg" class="me">
         <div id="circle">
-            <div class="feature"></div>
-            <div class="feature"></div>
-            <div class="feature"></div>
-            <div class="feature"></div>
+            <div class="feature one">
+                <img src="mobile-app.png" >
+                <div>
+                    <h1>App Developer</h1>
+                    <p>Android developer,IOS developer</p>
+                </div>
+            </div>
+            <div class="feature two">
+                <img src="web.png" >
+                <div>
+                    <h1>Web Developer</h1>
+                    <p>Responsive website,js,front-end and back-end</p>
+                </div>
+            </div>
+            <div class="feature three">
+                <img src="photoshop.png" >
+                <div>
+                    <h1>Photoshop</h1>
+                    <p>icon,photo,logo</p>
+                </div>
+            </div>
+            
         </div>
+        </div>
+        <div class="controls">
+            <img src="upload.png" id="upbtn" >
+            <h3>Features</h3>
+            <img src="down-arrow.png" id="downbtn">
         </div>
     </div>
+    <script>
+        var circle = document.getElementById("circle");
+        var upbtn = document.getElementById("upbtn");
+        var downbtn = document.getElementById("downbtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upbtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(-90deg)";
+            
+        }
+    </script>
 </body>
 </html>
