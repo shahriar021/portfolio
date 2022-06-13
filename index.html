@@ -22,6 +22,7 @@
             </div>
         </nav>
         <div class="information">
+            <div class="overlay"></div>
             <img src="shah.jpg" class="me">
         <div id="circle">
             <div class="feature one">
@@ -45,6 +46,13 @@
                     <p>icon,photo,logo</p>
                 </div>
             </div>
+            <div class="feature four">
+                <img src="exercise.png">
+                <div>
+                    <h1>Shahriar Chowdhury</h1>
+                    <p>Software Engineer</p>
+                </div>
+            </div>
             
         </div>
         </div>
@@ -64,8 +72,16 @@
 
         upbtn.onclick = function(){
             rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
             
         }
+        downbtn.onclick = function () {
+                rotateSum = rotateValue + "rotate(90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+
+            }
     </script>
 </body>
 </html>
